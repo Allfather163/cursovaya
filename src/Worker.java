@@ -1,5 +1,4 @@
 public class Worker {
-    public class Worker {
         private String fullName;
         private String name;
         private String surname;
@@ -10,7 +9,7 @@ public class Worker {
         public static int idCount = 1; // id
         private int id;
 
-        public Employee(String fullName, int otdel, int salary) {
+        public Worker(String fullName, int otdel, int salary) {
             this.fullName = fullName;
     public Worker(String name, String surname, String midname, int otdel, double salary){
                 this.name = name;
@@ -76,5 +75,5 @@ public class Worker {
             }
         }
     }
-}
+
 
