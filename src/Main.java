@@ -1,4 +1,5 @@
 public class Main {
+
     public static void main(String[] args) {
         Worker[] workerCorp = new Worker[10];
         workerCorp[0] = new Worker("Иван Иванов Иванович ", 2,100000);
@@ -42,6 +43,7 @@ public class Main {
         return allSalary;
     }
 
+
     public static int calculateEmployeeMinSalary(Worker[] worker) {
         System.out.println("Минимальная зарплата: ");
         int minSalary = worker[0].getSalary();
@@ -52,7 +54,7 @@ public class Main {
                 minSalIndex = i;
             }
         }
-        System.out.println(minSalary + " рублей. Сотрудник - " + worker[minSalIndex].fullName());
+        System.out.println(minSalary + " рублей. Сотрудник - " + worker[minSalIndex]);
         return minSalary;
     }
 
@@ -66,7 +68,7 @@ public class Main {
                 maxSalIndex = i;
             }
         }
-        System.out.println(maxSalary + " рублей. Сотрудник - " + worker[maxSalIndex].fullName());
+        System.out.println(maxSalary + " рублей. Сотрудник - " + worker[maxSalIndex]);
         return maxSalary;
     }
 
@@ -81,5 +83,8 @@ public class Main {
 
         System.out.println(medSalary + " рублей.");
         return medSalary;
+
+
     }
 }
+
